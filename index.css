@@ -6,12 +6,59 @@ a {
   cursor: pointer;
 }
 
+/*start of new */
+
+.header-main-m {
+  width: 100%;
+  height: 60px;
+  background-color: #1e1e1e;
+  display: none;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.header-main-logo-m {
+  width: fit-content;
+  height: 100%;
+  padding-left: 10px;
+  display: flex;
+}
+.header-main-logo-m img {
+  height: 30px;
+  align-self: center;
+}
+.header-main-nav-m {
+  width: fit-content;
+  height: 100%;
+}
+
+.header-main-nav-m ul li {
+  display: inline;
+  float: left;
+  line-height: 60px;
+  margin-left: 10px;
+  font-size: 10px;
+}
+.header-main-nav-m ul li a {
+  padding: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 60px;
+  color: #fff;
+  display: block;
+  height: 100%;
+}
+.header-main-nav-m ul li a:hover {
+  color: red;
+}
+
+/*end of new */
+
 .header-main {
   width: 100%;
   height: 60px;
   background-color: #1e1e1e;
   display: flex;
   justify-content: space-between;
+  z-index: 1000;
 }
 .header-main-logo {
   width: fit-content;
@@ -198,7 +245,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: red;
 }
 .banner-text img {
   width: 800px;
@@ -284,5 +330,125 @@ body {
     width: 100%;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .players-box q {
+    display: none;
+  }
+
+  /*mobile nav*/
+
+  .header-main-m {
+    width: 100%;
+    height: 60px;
+    background-color: #1e1e1e;
+    display: block;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+  .header-main-logo-m {
+    width: fit-content;
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+  }
+  .header-main-logo-m img {
+    height: 30px;
+    align-self: center;
+  }
+  .header-main-nav-m {
+    width: fit-content;
+    height: 100%;
+  }
+
+  .header-main-nav-m ul li {
+    display: inline;
+    float: left;
+    line-height: 60px;
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .header-main-nav-m ul li a {
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    color: #fff;
+    display: block;
+    height: 100%;
+  }
+  .header-main-nav-m ul li a:hover {
+    color: red;
+  }
+  /*mobile nav*/
+
+  /*desktop nav*/
+
+  .header-main {
+    width: 100%;
+    height: 60px;
+    background-color: #1e1e1e;
+    display: none;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+  .header-main-logo {
+    width: fit-content;
+    height: 100%;
+    padding-left: 60px;
+    display: flex;
+  }
+  .header-main-logo img {
+    height: 50px;
+    align-self: center;
+  }
+  .header-main-nav {
+    width: fit-content;
+    height: 100%;
+  }
+
+  .header-main-nav ul li {
+    display: inline;
+    float: left;
+    line-height: 60px;
+    margin-left: 30px;
+  }
+  .header-main-nav ul li a {
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    color: #fff;
+    display: block;
+    height: 100%;
+  }
+  .header-main-nav ul li a:hover {
+    color: red;
+  }
+  .header-main-sm {
+    width: fit-content;
+    height: 100%;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .header-main-sm-fb {
+    width: 30px;
+    height: 30px;
+    background-image: url(images/facebook-color.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header-main-sm-fb:hover {
+    background-image: url(images/facebook-color.png);
+  }
+
+  .header-main-sm-im {
+    width: 30px;
+    height: 30px;
+    background-image: url(images/instagram-color.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header-main-sm-im:hover {
+    background-image: url(images/instagram-color.png);
   }
 }
